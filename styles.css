@@ -7,6 +7,20 @@
   scroll-behavior: smooth;
 }
 
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* First Landing Page */
+
 #landing {
   background-image: url(img/website-background-image.jpg);
   background-size: 100% 100vh;
@@ -87,6 +101,8 @@ header {
   }
 }
 
+/* Seconds services page */
+
 .services {
   color: rgb(241, 241, 241);
   padding: 90px 20% 80px 6.4%;
@@ -112,6 +128,36 @@ header {
   font-weight: 400;
   font-size: 1.5em;
 }
+
+#services-landing {
+  background-image: url(img/website-services-background-image.jpg);
+  background-size: 100% 100vh;
+  padding: 76px 15% 70px 4.06%;
+  word-spacing: 0.5rem;
+  border-bottom: 2px solid white;
+}
+
+#front-end {
+  padding-bottom: 24px;
+}
+
+#para-front {
+  padding-bottom: 90px;
+}
+
+#back-end {
+  padding-bottom: 40px;
+}
+
+#para-back {
+  padding-bottom: 102px;
+}
+
+#full-stack {
+  padding-bottom: 54px;
+}
+
+/* Third working page */
 
 .working {
   color: rgb(241, 241, 241);
@@ -140,6 +186,20 @@ ul {
   line-height: 48px;
 }
 
+
+#working-landing {
+  background-image: url(img/website-works-background-image.jpg);
+  background-size: 100% 100vh;
+  padding: 87px 19.375% 329px 4.58%;
+  border-bottom: 2px solid white;
+}
+
+#h-work {
+  padding-bottom: 190px;
+}
+
+/* Fourth pricing page */
+
 .pricing {
   color: rgb(241, 241, 241);
 }
@@ -163,40 +223,6 @@ ul {
   grid-gap: 8.975%;
 }
 
-.contact {
-  color: #fff;
-  padding: 130px 37.34% 170px 6.4%;
-  backdrop-filter: blur(5px);
-  border: 2px solid white;
-  border-radius: 8px;
-}
-
-#h-contact {
-  font-family: "Quicksand", sans-serif;
-  font-size: 4rem;
-  padding-bottom: 86px;
-}
-
-.github-profile {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2em;
-  padding-bottom: 72px;
-}
-
-#services-landing {
-  background-image: url(img/website-services-background-image.jpg);
-  background-size: 100% 100vh;
-  padding: 76px 15% 70px 4.06%;
-  word-spacing: 0.5rem;
-  border-bottom: 2px solid white;
-}
-
-#working-landing {
-  background-image: url(img/website-works-background-image.jpg);
-  background-size: 100% 100vh;
-  padding: 87px 19.375% 329px 4.58%;
-  border-bottom: 2px solid white;
-}
 
 #pricing-landing {
   background-image: url(img/website-pricing-background-image.jpg);
@@ -204,38 +230,6 @@ ul {
   background-size: 100% /* 100vh */;
   background-repeat: none;
   border-bottom: 2px solid white;
-}
-
-#contact-landing {
-  background-image: url(img/website-contact-background-image.jpg);
-  background-size: 100% 100vh;
-  padding: 214px 20.08% 140px 11.5%;
-  background-repeat: none;
-  border-bottom: 2px solid white;
-}
-
-#front-end {
-  padding-bottom: 24px;
-}
-
-#para-front {
-  padding-bottom: 90px;
-}
-
-#back-end {
-  padding-bottom: 40px;
-}
-
-#para-back {
-  padding-bottom: 102px;
-}
-
-#full-stack {
-  padding-bottom: 54px;
-}
-
-#h-work {
-  padding-bottom: 190px;
 }
 
 .h3-pricing {
@@ -257,22 +251,6 @@ ul {
   justify-content: center;
 }
 
-#tele-username {
-  padding-bottom: 0px;
-}
-
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 2s ease;
-}
-
-.reveal.active {
-  transform: translateY(0px);
-  opacity: 1;
-}
-
 #soon {
   font-size: 1.5em;
   font-family: "Montserrat", sans-serif;
@@ -292,7 +270,7 @@ ul {
   color: rgb(0, 10, 82);
 }
 
- #highlight {
+#highlight {
   position: relative;
   z-index: 1000;
   overflow: hidden;
@@ -315,16 +293,6 @@ ul {
   inset: 7px;
   border-radius: 20px;
 }
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-} 
 
 #highlight-1 {
   position: relative;
@@ -395,3 +363,52 @@ ul {
   margin-top: 150px;
   margin-bottom: 100px;
 }
+
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
+/* Fifth contact me page */
+
+.contact {
+  color: #fff;
+  padding: 130px 37.34% 170px 6.4%;
+  backdrop-filter: blur(5px);
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+#h-contact {
+  font-family: "Quicksand", sans-serif;
+  font-size: 4rem;
+  padding-bottom: 86px;
+}
+
+.github-profile {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  padding-bottom: 72px;
+}
+
+#contact-landing {
+  background-image: url(img/website-contact-background-image.jpg);
+  background-size: 100% 100vh;
+  padding: 214px 20.08% 140px 11.5%;
+  background-repeat: none;
+  border-bottom: 2px solid white;
+}
+
+#tele-username {
+  padding-bottom: 0px;
+}
+
+
+
