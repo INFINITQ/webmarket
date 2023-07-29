@@ -304,7 +304,7 @@ ul {
   width: 500px;
   height: 100px;
   background: linear-gradient(#00ccff, #d500f9);
-  animation: rotate 4s linear infinite;
+  animation: rotate 3s linear infinite;
   border-radius: 16px;
 }
 
@@ -312,7 +312,7 @@ ul {
   content: '';
   position: absolute;
   background: #0e1538;
-  inset: 10px;
+  inset: 7px;
   border-radius: 20px;
 }
 
@@ -373,4 +373,25 @@ ul {
   background: #0e1538;
   inset: 10px;
   border-radius: 20px;
+}
+
+#highlight img {
+  position: absolute;
+  z-index: 10;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+#highlight-1 img {
+  position: absolute;
+  z-index: 10;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+#highlight-2 img {
+  position: absolute;
+  z-index: 10;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
