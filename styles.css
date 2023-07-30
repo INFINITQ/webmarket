@@ -89,6 +89,14 @@ header {
   animation: fadeinbottom 1.2s both;
 }
 
+#image1 {
+  display: block;
+}
+
+#image2 {
+  display: none;
+}
+
 @keyframes fadeinbottom {
   0% {
     opacity: 0;
@@ -102,12 +110,12 @@ header {
 }
 
 #upward:hover {
-  border-bottom: 3px solid #fff ;
+  border-bottom: 3px solid #fff;
   -webkit-animation: upward 0.5s both;
   -moz-animation: upward 0.5s both;
   -o-animation: upward 0.5s both;
   animation: upward 0.5s both;
-  box-shadow: 4px #000  ;
+  box-shadow: 4px #000;
 }
 
 @keyframes upward {
@@ -207,7 +215,6 @@ ul {
   line-height: 48px;
 }
 
-
 #working-landing {
   background-image: url(img/website-works-background-image.jpg);
   background-size: 100% 100vh;
@@ -243,7 +250,6 @@ ul {
   grid-template-columns: 427px 427px 427px;
   grid-gap: 8.975%;
 }
-
 
 #pricing-landing {
   background-image: url(img/website-pricing-background-image.jpg);
@@ -298,7 +304,7 @@ ul {
 }
 
 #highlight::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 500px;
   height: 100px;
@@ -308,7 +314,7 @@ ul {
 }
 
 #highlight::after {
-  content: '';
+  content: "";
   position: absolute;
   background: #0e1538;
   inset: 7px;
@@ -322,9 +328,9 @@ ul {
 }
 
 #highlight-1::before {
-  content: '';
+  content: "";
   position: absolute;
-  width:  500px;
+  width: 500px;
   height: 100px;
   background: linear-gradient(#00ccff, #d500f9);
   animation: rotate 4s linear infinite;
@@ -332,13 +338,12 @@ ul {
 }
 
 #highlight-1::after {
-  content: '';
+  content: "";
   position: absolute;
   background: #0e1538;
   inset: 10px;
   border-radius: 20px;
 }
-
 
 #highlight-2 {
   position: relative;
@@ -347,7 +352,7 @@ ul {
 }
 
 #highlight-2::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 500px;
   height: 100px;
@@ -357,7 +362,7 @@ ul {
 }
 
 #highlight-2::after {
-  content: '';
+  content: "";
   position: absolute;
   background: #0e1538;
   inset: 10px;
@@ -385,8 +390,6 @@ ul {
   margin-bottom: 100px;
 }
 
-
-
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -395,7 +398,7 @@ ul {
   to {
     transform: rotate(360deg);
   }
-} 
+}
 
 /* Fifth contact me page */
 
@@ -431,5 +434,14 @@ ul {
   padding-bottom: 0px;
 }
 
+/* Media Quries */
 
+@media screen and (max-width: 600px) {
+  #image1 {
+    display: none;
+  }
 
+  #image2 {
+    display: block;
+  }
+}
