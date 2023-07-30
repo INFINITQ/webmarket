@@ -101,6 +101,27 @@ header {
   }
 }
 
+#upward:hover {
+  border-bottom: 3px solid #fff ;
+  -webkit-animation: upward 0.5s both;
+  -moz-animation: upward 0.5s both;
+  -o-animation: upward 0.5s both;
+  animation: upward 0.5s both;
+  box-shadow: 4px #000  ;
+}
+
+@keyframes upward {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+}
+
 /* Seconds services page */
 
 .services {
